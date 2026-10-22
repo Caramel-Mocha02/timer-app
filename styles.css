@@ -121,10 +121,11 @@ body.exploded .planet {
 .timer-panel {
   display: grid;
   place-items: center;
-  width: min(100vw - 0.2rem, 660px);
-  min-height: clamp(7.5rem, 21vh, 9rem);
-  padding: 0.12rem 0.12rem;
-  border-radius: 16px;
+  width: auto;
+  max-width: calc(100vw - 0.15rem);
+  min-height: clamp(7rem, 20vh, 8.8rem);
+  padding: 0.08rem 0.08rem;
+  border-radius: 14px;
   background: var(--panel-color);
   box-shadow: 0 20px 60px rgba(17, 17, 17, 0.06);
   overflow: hidden;
@@ -132,10 +133,10 @@ body.exploded .planet {
 }
 
 .timer {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: auto;
   max-width: 100%;
-  font-size: clamp(1.8rem, 5.8vw, 6rem);
+  font-size: clamp(1.7rem, 5.2vw, 5.5rem);
   line-height: 0.9;
   font-weight: 800;
   letter-spacing: -0.07em;
