@@ -104,8 +104,8 @@ body.exploded .planet {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: clamp(1rem, 2.5vh, 1.8rem);
-  padding: clamp(1rem, 2.5vh, 2rem) 0.75rem clamp(1rem, 3vh, 2rem);
+  gap: clamp(0.75rem, 1.6vh, 1.2rem);
+  padding: clamp(0.75rem, 1.8vh, 1.4rem) 0.6rem clamp(0.75rem, 2vh, 1.1rem);
   border-radius: 0;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(8px);
@@ -121,10 +121,10 @@ body.exploded .planet {
 .timer-panel {
   display: grid;
   place-items: center;
-  width: min(100vw - 1.5rem, 960px);
-  min-height: clamp(14rem, 42vh, 22rem);
-  padding: clamp(0.75rem, 2.5vw, 1.25rem) clamp(0.5rem, 2vw, 1rem);
-  border-radius: 26px;
+  width: min(100vw - 1rem, 860px);
+  min-height: clamp(11rem, 32vh, 16rem);
+  padding: clamp(0.6rem, 1.8vw, 0.9rem) clamp(0.4rem, 1.5vw, 0.8rem);
+  border-radius: 22px;
   background: var(--panel-color);
   box-shadow: 0 20px 60px rgba(17, 17, 17, 0.06);
   overflow: hidden;
@@ -135,7 +135,7 @@ body.exploded .planet {
   display: block;
   width: 100%;
   max-width: 100%;
-  font-size: clamp(3rem, 12vw, 12rem);
+  font-size: clamp(2.5rem, 9vw, 9rem);
   line-height: 0.9;
   font-weight: 800;
   letter-spacing: -0.07em;
