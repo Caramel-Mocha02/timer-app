@@ -104,8 +104,8 @@ body.exploded .planet {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.2rem;
-  padding: 0.2rem 0.2rem 0.2rem;
+  gap: 0.1rem;
+  padding: 0.1rem 0.1rem 0.1rem;
   border-radius: 0;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(8px);
@@ -121,10 +121,10 @@ body.exploded .planet {
 .timer-panel {
   display: grid;
   place-items: center;
-  width: min(100vw - 0.4rem, 680px);
-  min-height: clamp(8rem, 23vh, 10rem);
-  padding: 0.2rem 0.2rem;
-  border-radius: 18px;
+  width: min(100vw - 0.2rem, 660px);
+  min-height: clamp(7.5rem, 21vh, 9rem);
+  padding: 0.12rem 0.12rem;
+  border-radius: 16px;
   background: var(--panel-color);
   box-shadow: 0 20px 60px rgba(17, 17, 17, 0.06);
   overflow: hidden;
@@ -135,7 +135,7 @@ body.exploded .planet {
   display: block;
   width: 100%;
   max-width: 100%;
-  font-size: clamp(2rem, 6.5vw, 6.5rem);
+  font-size: clamp(1.8rem, 5.8vw, 6rem);
   line-height: 0.9;
   font-weight: 800;
   letter-spacing: -0.07em;
@@ -151,8 +151,8 @@ body.exploded .planet {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  width: min(80vw, 420px);
+  gap: 0.5rem;
+  width: min(92vw, 320px);
   transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
 }
 
@@ -160,9 +160,9 @@ body.exploded .planet {
   appearance: none;
   border: 0;
   border-radius: 999px;
-  padding: 1rem 2rem;
-  min-width: 120px;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  padding: 0.75rem 1.2rem;
+  min-width: 96px;
+  font-size: clamp(0.7rem, 1.7vw, 0.9rem);
   font-weight: 700;
   letter-spacing: 0.12em;
   cursor: pointer;
