@@ -133,15 +133,21 @@ body.exploded .planet {
   border-radius: 26px;
   background: var(--panel-color);
   box-shadow: 0 20px 60px rgba(17, 17, 17, 0.06);
+  overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.25s ease, opacity 0.2s ease;
 }
 
 .timer {
-  font-size: clamp(4.5rem, 20vw, 10rem);
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(3.4rem, 14vw, 8.5rem);
   line-height: 0.9;
   font-weight: 800;
   letter-spacing: -0.07em;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
   user-select: none;
   transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
   will-change: transform, filter;
