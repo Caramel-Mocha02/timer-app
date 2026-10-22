@@ -151,18 +151,19 @@ function startTimer() {
     finishTimeoutId = null;
   }
 
+  isRunning = true;
+  endTime = Date.now() + DURATION_MS;
   warningStarted = false;
   document.body.classList.remove('exploded', 'warning-phase');
   finalScreen.hidden = true;
   finalScreen.classList.remove('visible');
   finalScreen.setAttribute('aria-hidden', 'true');
-  setDisplayTime(0);
+  setDisplayTime(DURATION_MS);
   startButton.disabled = true;
   stopButton.disabled = false;
 
-  window.setTimeout(() => {
-    finishSequence();
-  }, 120);
+  updateTimerDisplay();
+  timerId = window.setInterval(updateTimerDisplay, 100);
 }
 
 startButton.addEventListener('click', startTimer);
