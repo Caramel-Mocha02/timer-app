@@ -104,8 +104,8 @@ body.exploded .planet {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.35rem;
-  padding: 0.35rem 0.35rem 0.35rem;
+  gap: 0.55rem;
+  padding: 0.5rem;
   border-radius: 0;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(8px);
@@ -122,9 +122,9 @@ body.exploded .planet {
   display: grid;
   place-items: center;
   width: auto;
-  max-width: calc(100vw - 0.45rem);
+  max-width: calc(100vw - 0.9rem);
   min-height: clamp(7.3rem, 20.5vh, 9.2rem);
-  padding: 0.24rem 0.24rem;
+  padding: 0.45rem 0.7rem;
   border-radius: 16px;
   background: var(--panel-color);
   box-shadow: 0 20px 60px rgba(17, 17, 17, 0.06);
